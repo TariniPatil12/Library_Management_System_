@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Library Management System</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: url('https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 20px;
+    position: relative;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(69, 179, 157, 0.9); /* Added transparency */
+    color: white;
+    border-radius: 5px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 200px;
+}
+
+.action-item {
+    background-color: rgba(255, 255, 255, 0.7); /* Added transparency */
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 80px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.action-item h3 {
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.action-item a {
+    text-decoration: none;
+    color: #008CBA;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.action-item a:hover {
+    color: #005f73;
+}
+
+.action-item:hover {
+    transform: translateY(-5px);
+}
+
+.register {
+    position: absolute;
+    top: 28px;
+    right: 25px;
+    background-color: rgba(255, 255, 255, 0.9); /* Added transparency */
+    border-radius: 5px;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.register h3 {
+    margin: 0 0 5px;
+    color: #333;
+    font-size: 1em;
+}
+
+.register a {
+    text-decoration: none;
+    color: #008CBA;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.register a:hover {
+    color: #005f73;
+}
+
+.register:hover {
+    transform: translateY(-5px);
+}
+</style>
+</head>
+<body>
+    <header>
+        <h1>LIBRARY MANAGEMENT SYSTEM</h1>
+    </header>
+    <div class="register">
+        <h3>Add Books</h3>
+        <a href="Addbook.jsp">Click here</a>
+    </div>
+    <div class="actions">
+        <div class="action-item">
+            <h3>View BookList</h3>
+            <a href="Booklist.jsp">Click here</a>
+        </div>
+        <div class="action-item">
+            <h3>Update</h3>
+            <a href="update.jsp">Click here</a>
+        </div>
+        <div class="action-item">
+            <h3>Delete</h3>
+            <a href="delete.jsp">Click here</a>
+        </div>
+    </div>
+</body>
+</html>
